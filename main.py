@@ -18,7 +18,7 @@ nlines = st.sidebar.slider("Number of Source Lines per Patch",
 st.sidebar.subheader("This information is available on your TesserACT design tab")
 min_sl = st.sidebar.number_input("Lowest Source Line Number i.e 2.1, you have to input that format with a .1",
                                  step=0.1,format='%f')
-max_sl = st.sidebar.number_input("Largest Source Line Number i.e 240.1, you have to input that format with a .",
+max_sl = st.sidebar.number_input("Largest Source Line Number i.e 240.1, you have to input that format with a .1",
                                  step=0.1,format='%f')
 
 direction = st.sidebar.selectbox('Do you have a decreasing number of source lines',('Yes','No'))
