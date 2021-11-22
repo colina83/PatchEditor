@@ -7,7 +7,7 @@ import base64
 #Title
 st.title("TesserACT Patch Editor")
 st.subheader("Please ensure that you enter the values for your first and last source line number before uploading a text file")
-st.subheader("If you are fixing multiple geometries, please ensure that you type your source line information before uploading your next file")
+st.subheader("If you are fixing multiple geometries, please ensure that you type your source line information before uploading the next file")
 #Adding a sidebar
 st.sidebar.subheader("Data Uploader")
 
@@ -16,9 +16,9 @@ nlines = st.sidebar.slider("Number of Source Lines per Patch",
                            min_value=3,max_value=4,value=4)
 
 st.sidebar.subheader("This information is available on your TesserACT design tab")
-min_sl = st.sidebar.number_input("Lowest Source Line Number i.e 2.1, you have to input that format with a .1",
+min_sl = st.sidebar.number_input("Lowest Source Line Number i.e 2.1, the format includes a .1",
                                  step=0.1,format='%f')
-max_sl = st.sidebar.number_input("Largest Source Line Number i.e 240.1, you have to input that format with a .1",
+max_sl = st.sidebar.number_input("Highest Source Line Number i.e 240.1, the format includes a .1",
                                  step=0.1,format='%f')
 
 direction = st.sidebar.selectbox('Do you have a decreasing number of source lines',('Yes','No'))
